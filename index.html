@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232c3e50'/><text x='50' y='70' font-size='70' text-anchor='middle' fill='%23ffffff' font-family='system-ui, sans-serif' font-weight='600'>王</text></svg>">
+    <title>王人学院 · Wangren Academy</title>
+    <style>
+        /* 重置 & 基础 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #1e1e2f;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            width: 100%;
+        }
+        /* 头部 */
+        header {
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.25rem;
+            border-left: 4px solid #2c3e50;
+            padding-left: 1rem;
+        }
+        .subhead {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-left: 1.2rem;
+        }
+        /* 区块 */
+        section {
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.3rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+        /* 项目列表 */
+        .project-item {
+            background: #ffffff;
+            border: 1px solid #edf2f7;
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            transition: box-shadow 0.15s;
+        }
+        .project-item:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+        }
+        .project-link {
+            font-size: 1.1rem;
+            font-weight: 500;
+            word-break: break-all;
+        }
+        .project-link a {
+            text-decoration: none;
+            color: #0369a1;
+            border-bottom: 1px dotted #b0c4de;
+        }
+        .project-link a:hover {
+            color: #0b4b6f;
+            border-bottom: 1px solid;
+        }
+        /* 联系方式 */
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            border: 1px solid #e2e8f0;
+            font-size: 0.95rem;
+        }
+        .contact-item a {
+            text-decoration: none;
+            color: #2d3748;
+        }
+        .contact-item a:hover {
+            color: #0369a1;
+            text-decoration: underline;
+        }
+        .emoji-icon {
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+        /* 页脚 */
+        footer {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #718096;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.5rem;
+        }
+        /* 响应式 */
+        @media (max-width: 500px) {
+            h1 { font-size: 2rem; }
+            .container { padding: 1.5rem 1rem; }
+            .contact-links { gap: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>王人学院 · Wangren Academy</h1>
+            <div class="subhead">由浙江王广成创立</div>
+        </header>
+
+        <section>
+            <h2>简介</h2>
+            <p>这里是我（王广成）用来部署各种项目的站点。</p>
+        </section>
+
+        <section>
+            <h2>项目</h2>
+            <div class="project-item">
+                <div class="project-link">
+                    🔗 <a href="https://github.com/Wangren-Academy" target="_blank" rel="noopener noreferrer">github.com/Wangren-Academy</a>
+                </div>
+                <div style="margin-top: 0.3rem; color: #4b5563; font-size: 0.95rem;">
+                    王人学院的 GitHub 组织，存放开源仓库。
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>联系方式</h2>
+            <div class="contact-links">
+                <div class="contact-item">
+                    <span class="emoji-icon">📧</span>
+                    <a href="mailto:Wangren-Academy@outlook.com">Wangren-Academy@outlook.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="emoji-icon">🐙</span>
+                    <a href="https://github.com/Wangren-Academy" target="_blank" rel="noopener noreferrer">GitHub 组织</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 王人学院 · 由王广成维护
+        </footer>
+    </div>
+</body>
+</html>
