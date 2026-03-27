@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown 渲染器</title>
+  <style>
+    body { font-family: system-ui; max-width: 800px; margin: 0 auto; padding: 20px; }
+    textarea { width: 100%; height: 200px; margin-bottom: 10px; }
+    .preview { border: 1px solid #ddd; padding: 20px; min-height: 200px; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <h2>Markdown 编辑器</h2>
+  <textarea id="editor"># 标题
+  
+- 列表项
+- **加粗文字**
+- [链接](https://example.com)</textarea>
+  
+  <h2>预览</h2>
+  <div id="preview" class="preview"></div>
+  
+  <script>
+    const editor = document.getElementById('editor');
+    const preview = document.getElementById('preview');
+    
+    function render() {
+      preview.innerHTML = marked.parse(editor.value);
+    }
+    
+    editor.addEventListener('input', render);
+    render(); // 初始渲染
+  </script>
+</body>
+</html>
